@@ -5,7 +5,8 @@ function nextLine(line) {
 "<p onClick=nextLine(3)>So I forked the repo</p>",
 "<p onClick=nextLine(4)>Now they all send <em>me</em> changes, d'oh!</p>",
 "<p onClick=nextLine(5)>Said the maintainer, 'Welcome to the Club!'</p>");
-
+	//Keeps poem looping
+	line = line % 5;
 	document.getElementById("line").innerHTML=poem[line];
 }
 
